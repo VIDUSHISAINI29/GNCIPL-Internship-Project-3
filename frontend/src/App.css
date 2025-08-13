@@ -1,0 +1,20 @@
+
+html, body, #root {
+  min-height: 100%;
+  color: #f8f9fa; /* light text */
+  background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 100%);
+}
+
+/* optional subtle glow */
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #00E6FF 0%, transparent 70%),
+              radial-gradient(circle at bottom right, #FF1E8E 0%, transparent 70%);
+  opacity: 0.06;
+  z-index: -1;
+}

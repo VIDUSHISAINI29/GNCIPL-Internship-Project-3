@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        
+html, body, #root {
+  min-height: 100%;
+  color: #f8f9fa; /* light text */
+  background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 100%);
+}
+
+/* optional subtle glow */
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #00E6FF 0%, transparent 70%),
+              radial-gradient(circle at bottom right, #FF1E8E 0%, transparent 70%);
+  opacity: 0.06;
+  z-index: -1;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+      </style>
+  </head>
+  <body>
+    <script>
+    tailwind.config = {
+    theme: {
+    extend: {
+      colors: {
+        // background: '#121212',     // dark base background
+        neonBlue: '#00FFFF',       // main accent color
+        neonPink: '#FF007F',       // secondary accent color
+        textPrimary: '#F8F9FA',    // white text color
+        textSecondary: '#B0B0B0',  // gray for secondary text
+        cardBackground: '#1e293b', // Dark slate for cards
+      },
+      backgroundImage: {
+        modernBgGradient: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+      },
+      boxShadow: {
+        neonGlow: '0 0 15px rgba(0, 255, 255, 0.7)',
+        pinkGlow: '0 0 20px rgba(255, 0, 127, 0.7)',
+      },
+    },
+  },
+    }
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

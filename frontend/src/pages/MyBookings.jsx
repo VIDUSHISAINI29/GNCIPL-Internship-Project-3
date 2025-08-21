@@ -129,7 +129,7 @@ const GenerateMyBookings = () => {
 
                 {/* View Ticket Button */}
                 <div className="text-right mt-6">
-                  <button
+                  {/* <button
                     className="bg-gradient-to-r from-neonBlue to-neonPink
                                hover:from-neonPink hover:to-neonBlue
                                text-background font-semibold px-6 py-2 rounded-xl shadow-lg
@@ -137,7 +137,7 @@ const GenerateMyBookings = () => {
                                hover:shadow-pinkGlow border-2 border-neonPink"
                   >
                     View Ticket
-                  </button>
+                  </button> */}
                 </div>
               </div>
             );

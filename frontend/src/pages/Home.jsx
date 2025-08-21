@@ -11,8 +11,8 @@ export default function Home() {
 
   return (
     <div className="container min-h-screen mx-auto p-10">
-      <h1 className="text-3xl font-bold text-center text-neonBlue mb-8">Upcoming Sports Events</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <h1 className="text-3xl font-bold text-center text-neonBlue mb-20">Upcoming Sports Events</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
         {events.map(event => (
           <EventCard key={event._id} event={event} onBook={(e) => console.log("Booking", e)} />
         ))}

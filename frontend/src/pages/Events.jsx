@@ -45,7 +45,7 @@ export default function Events() {
   };
 
   return (
-    <div className="min-h-screen  py-10 px-4">
+    <div className="min-h-screen hover:cursor-pointer  py-10 px-4">
       <h1 className="text-4xl font-extrabold text-center mb-10 text-neonBlue drop-shadow-neonGlow">
         All Events
       </h1>
@@ -56,7 +56,7 @@ export default function Events() {
         </p>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
         {events.map((e) => (
           <div
             key={e._id}

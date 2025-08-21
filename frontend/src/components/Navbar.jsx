@@ -223,7 +223,7 @@ export default function Navbar() {
             <Link
               key={path}
               to={path}
-              className={`relative text-textPrimary font-medium transition ${
+              className={`relative  font-medium transition ${
                 isActive(path) ? "text-neonBlue" : "hover:text-neonPink"
               }`}
             >
